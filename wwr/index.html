@@ -6,16 +6,11 @@
   <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
   <link rel="stylesheet" href="styles/style.css">
   <style>
-    .canyon-container {
-      display: flex;
-      justify-content: flex-start;
-      padding: 40px 20px;
-    }
-
-    .canyon-container img.canyon {
-      width: 35%;
-      height: auto;
-      margin-left: 0;
+    .canyon {
+      grid-column: 2/7;
+      grid-row: 5/8;
+      width: 100%;
+      box-shadow: 5px 5px 10px #6f7364;
     }
   </style>
 </head>
@@ -67,9 +62,7 @@
 
       <div id="background"></div>
 
-      <div class="canyon-container">
-        <img class="canyon" src="images/mountains.jpg" alt="Canyon view">
-      </div>
+      <img class="canyon" src="images/mountains.jpg" alt="Canyon view">
 
       <section class="msg">
         <h2>More Than Just The Thrill</h2>
