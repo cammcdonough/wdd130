@@ -117,6 +117,7 @@ nav a:hover {
   padding: 15px 30px;
   margin-top: 50px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .book:hover,
@@ -124,11 +125,6 @@ nav a:hover {
   background-color: #555;
   color: #d9c2a3;
   text-decoration: none;
-}
-
-.msg .join {
-  margin-top: 15px;
-  display: inline-block;
 }
 
 /* MAIN SECTION */
@@ -157,6 +153,7 @@ main section {
   grid-row: 2 / 3;
 }
 
+/* Background section behind message */
 #background {
   height: 725px;
   background-color: #d9c2a3;
@@ -164,33 +161,12 @@ main section {
   grid-row: 4 / 9;
 }
 
+/* Images */
 .mountains {
   width: 100%;
   grid-column: 2 / 7;
   grid-row: 6 / 9;
   box-shadow: 5px 5px 10px #6f7364;
-}
-
-.msg {
-  background-color: #6f7364;
-  padding: 35px;
-  grid-column: 6 / 10;
-  grid-row: 6 / 7;
-  box-shadow: 5px 5px 10px #6f7364;
-  text-align: left;
-  line-height: 1.5em;
-  color: white;
-  align-self: center;
-}
-
-.msg h2 {
-  color: white;
-}
-
-.msg p {
-  color: white;
-  padding-bottom: 15px;
-  font-size: 0.8em;
 }
 
 .card-img {
@@ -213,6 +189,29 @@ main section {
 
 main section img {
   box-sizing: border-box;
+}
+
+/* Message Section */
+.msg {
+  background-color: #6f7364;
+  padding: 35px;
+  grid-column: 6 / 10;
+  grid-row: 6 / 7;
+  box-shadow: 5px 5px 10px #6f7364;
+  text-align: left;
+  line-height: 1.5em;
+  color: white;
+  align-self: center;
+}
+
+.msg h2 {
+  color: white;
+}
+
+.msg p {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 0.8em;
 }
 
 /* FOOTER */
@@ -247,7 +246,7 @@ footer .social img {
   padding-top: 15px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
     display: block;
