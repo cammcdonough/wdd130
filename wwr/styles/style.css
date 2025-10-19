@@ -49,6 +49,7 @@ nav a {
   color: #fcfbfb;
   text-decoration: none;
   padding: 35px;
+  transition: 0.3s;
 }
 
 nav a:hover {
@@ -118,6 +119,7 @@ nav a:hover {
   margin-top: 50px;
   border-radius: 5px;
   display: inline-block;
+  transition: 0.3s;
 }
 
 .book:hover,
@@ -234,10 +236,12 @@ footer p {
 footer a {
   color: white;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: #d9c2a3;
 }
 
 footer .social img {
