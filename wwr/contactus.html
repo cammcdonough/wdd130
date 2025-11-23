@@ -8,6 +8,7 @@
 </head>
 <body>
   <div id="content">
+
     <header>
       <a id="logo_link" href="index.html">
         <img class="logo" src="images/dryoarlogo.png" alt="Dry Oar Logo">
@@ -20,17 +21,57 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Contact Dry Oar Rafting</h1>
-      <p>We’d love to hear from you! Reach out to plan your next river adventure.</p>
-      <p>Email: info@dryoarrafting.com</p>
-      <p>Phone: (555) 123-RAFT</p>
-      <p>Address: 123 Riverbend Lane, Boise, ID</p>
+    <main class="contact-grid">
+
+      <section class="contact-info">
+        <h1>Contact Us</h1>
+        <p>
+          Have questions about our rafting trips? Want to book a group event?
+          Use the form here to send us a message and we’ll get back to you soon.
+        </p>
+
+        <p><strong>Email:</strong> info@dryoar.com</p>
+        <p><strong>Phone:</strong> (555) 555-5555</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9am–5pm</p>
+      </section>
+
+      <section class="contact-form">
+        <form action="#" method="post">
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button class="book" type="submit">Send Message</button>
+
+        </form>
+      </section>
+
     </main>
 
     <footer>
       <p>Dry Oar &copy; 2025 - Cameron McDonough</p>
+      <p><a href="site-plan-rafting.html">Site Plan</a></p>
+      <p><a href="contactus.html">Contact Us</a></p>
+
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="facebook icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="instagram icon">
+        </a>
+      </div>
     </footer>
+
   </div>
 </body>
 </html>
