@@ -58,13 +58,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* HERO */
+/* HERO SECTION */
 #hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   margin-top: -100px;
   position: relative;
-  width: 100%;
 }
 
 #hero-box {
@@ -93,16 +92,12 @@ nav a:hover {
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center;
-  font-family: 'Bebas Neue', 'Bradley Hand', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 #hero-msg h1 {
   font-size: 2em;
   margin-top: 10px;
-}
-
-#hero-msg h4 {
-  color: white;
 }
 
 .button-box {
@@ -126,10 +121,9 @@ nav a:hover {
 .join:hover {
   background-color: #555;
   color: #d9c2a3;
-  text-decoration: none;
 }
 
-/* MAIN SECTION */
+/* HOME PAGE GRID */
 .home-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -142,20 +136,17 @@ main section {
 
 .rivers-card {
   grid-column: 2 / 4;
-  grid-row: 2 / 3;
 }
 
 .camping-card {
   grid-column: 5 / 7;
-  grid-row: 2 / 3;
 }
 
 .rapids-card {
   grid-column: 8 / 10;
-  grid-row: 2 / 3;
 }
 
-/* Background section behind message */
+/* BACKGROUND FOR MESSAGE */
 #background {
   height: 725px;
   background-color: #d9c2a3;
@@ -163,7 +154,6 @@ main section {
   grid-row: 4 / 9;
 }
 
-/* Images */
 .mountains {
   width: 100%;
   grid-column: 2 / 7;
@@ -173,7 +163,6 @@ main section {
 
 .card-img {
   max-width: 100%;
-  height: auto;
   border: 10px solid #d9c2a3;
   transition: transform 0.5s;
   box-shadow: 5px 5px 10px #6f7364;
@@ -186,14 +175,9 @@ main section {
 
 .icon {
   width: 80px;
-  padding-top: 10px;
 }
 
-main section img {
-  box-sizing: border-box;
-}
-
-/* Message Section */
+/* MESSAGE SECTION */
 .msg {
   background-color: #6f7364;
   padding: 35px;
@@ -203,15 +187,9 @@ main section img {
   text-align: left;
   line-height: 1.5em;
   color: white;
-  align-self: center;
-}
-
-.msg h2 {
-  color: white;
 }
 
 .msg p {
-  color: white;
   padding-bottom: 15px;
   font-size: 0.8em;
 }
@@ -247,123 +225,140 @@ footer a:hover {
 footer .social img {
   width: 30px;
   margin: 0 5px;
-  padding-top: 15px;
 }
 
-/* =======================
-   Rivers Page Styles
-   ======================= */
+/* =======================================================
+   RIVERS PAGE — PERFECTED ALIGNMENT VERSION
+   ======================================================= */
 
-.rivers-grid {
-  max-width: 1200px;
+.rivers-page {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ----- TOP TITLE + INTRO ----- */
+.rivers-hero h1 {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  color: #141e0d;
+}
+
+.rivers-intro {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1.1fr 1fr;
   gap: 2rem;
-  align-items: start;
+  align-items: center;
 }
 
-.river-card {
-  background-color: white;
-  border-radius: 8px;
-  padding: 1.25rem;
-  box-shadow: 0 4px 10px #6f7364;
-  text-align: left;
-}
-
-.river-card .card-img {
+.rivers-intro img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
-  border: none;
+  border-radius: 10px;
   box-shadow: 5px 5px 10px #6f7364;
 }
 
-.river-card h2 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
+/* ----- MIDDLE AREA: TEXT LEFT / IMAGES RIGHT ----- */
+.rivers-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  align-items: start;
 }
 
-.river-card p {
-  line-height: 1.6;
+/* Left Column */
+.river-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-/* Call to Action section on Rivers page */
-.cta {
-  grid-column: 1 / -1;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 2rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/* Vertical align each text block with matching image */
+.river-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px; /* matches image height */
 }
 
-.cta h2 {
-  margin-bottom: 0.75rem;
+.river-info h2 {
   font-size: 1.7rem;
+  margin-bottom: 0.4rem;
 }
 
-.cta p {
-  margin-bottom: 1.25rem;
+.river-info p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Right Column */
+.river-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.river-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* ----- CTA Section ----- */
+.rivers-cta {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.rivers-cta .cta-img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 1.6rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px #6f7364;
+}
+
+.rivers-cta .cta-text {
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
+  margin: 0 auto;
 }
 
-.cta .book {
-  display: inline-block;
-  padding: 0.75rem 1.75rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
+.rivers-cta h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
     display: block;
     height: auto;
   }
+
   nav, footer {
     flex-direction: column;
   }
+
   nav a {
     display: block;
     padding: 15px;
   }
-  #hero {
-    margin-top: 0;
+
+  .rivers-intro,
+  .rivers-layout {
+    grid-template-columns: 1fr;
   }
-  #hero-msg {
-    margin-top: 0;
-  }
-  #hero-msg h4 {
-    display: none;
-  }
-  #hero-msg h1 {
-    color: #6f7364;
-  }
-  .home-title {
-    font-size: 25px;
-  }
-  .rivers-card, .camping-card, .rapids-card {
-    margin: 50px auto;
-    width: 60%;
-  }
-  #background {
-    display: none;
-  }
-  .mountains, .msg {
-    width: 80%;
-    display: block;
+
+  .river-images img {
+    max-width: 420px;
     margin: 0 auto;
   }
-  footer {
-    margin-top: 25px;
+
+  .river-info {
+    min-height: auto;
   }
 }
